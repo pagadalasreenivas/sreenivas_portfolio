@@ -1,0 +1,138 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color:  #1a7c4a; 
+  padding: 1rem;
+}
+
+.nav-bar nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar nav ul li {
+  display: inline;
+}
+
+.nav-bar nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-bar nav ul li a:hover {
+  color: #ffcc00; /* Highlight color */
+}
+
+/* Main Content */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-bar nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar nav ul li {
+    margin: 0.5rem 0;
+  }
+}
+
+.nav-link-underline {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+}
+
+.nav-link-underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  transition: all 0.6s ease-in-out;
+}
+
+.nav-link-underline:hover::after {
+  width: 100%;
+}
+
+.hover-z-index {
+  position: relative; /* Ensure the button can have a z-index */
+  z-index: 1; /* Default z-index */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.hover-z-index:hover {
+  z-index: 10; /* Raise z-index on hover */
+  background-color: black !important; /* Optional: Change background */
+  color: white !important; /* Optional: Change text color */
+  transform: scale(1.05); /* Slight enlargement */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow */
+}
+
+.hover-transform {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.hover-transform:hover {
+  transform: rotate(10deg) scale(1.1); /* Adds rotation and scaling */
+  background-color: black !important;
+  color: white !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+.hover-effect:hover {
+  background-color: black !important;
+  color: white !important;
+  box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Smaller header size for mobile */
+  }
+
+  .home-section {
+    padding: 10px; /* Reduce padding on mobile */
+  }
+
+  .btn {
+    font-size: 0.9rem; /* Smaller font for buttons */
+    padding: 8px 16px;
+  }
+
+  .card {
+    margin-top: 20px; /* Add space between stacked sections */
+  }
+}
