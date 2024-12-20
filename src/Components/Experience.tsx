@@ -40,7 +40,7 @@ export default function Experience() {
           {/* Left Section: Image */}
           <Col xs={12} md={6} className="text-center mb-4 mb-md-0">
             <img
-              src="/Assets/expierence.png"
+              src="/sreenivas_portfolio/Assets/expierence.png"
               alt="Experience"
               className="img-fluid"
               style={{

@@ -5,19 +5,19 @@ const projects = [
     id: 1,
     title: "SportInfo App",
     description: "Built a dynamic live sports app to enhance user engagement with features like live match updates, player stats across Football, Basketball, and Cricket, and intuitive navigation using Expo Router and React. Integrated match highlights with timeline bars, real-time lineup details, and a image upload feature for user reactions. Leveraged sensor data and authentication for personalization and ensured scalability and performance through efficient state management and React best practices.",
-    imageUrl: "/Assets/sportinfo.jpg", // Replace with an appropriate image URL
+    imageUrl: "/sreenivas_portfolio/Assets/sportinfo.jpg", // Replace with an appropriate image URL
   },
   {
     id: 2,
     title: "Gesture-Controlled Virtual Mouse",
     description: "Created a virtual mouse that uses Python, OpenCV, and PyAutoGUI to recognize hand gestures for touchless interaction. Implemented image processing techniques like skin detection and segmentation to map gestures to mouse actions. This project enhances accessibility for users with disabilities and reduces touch interactions on shared devices, promoting hygiene and inclusivity.",
-    imageUrl: "/Assets/gesture.png", // Replace with an appropriate image URL
+    imageUrl: "/sreenivas_portfolio/Assets/gesture.png", // Replace with an appropriate image URL
   },
   {
     id: 3,
     title: "Smart Pen for Digital Handwriting Conversion",
     description: "Developed a smart pen with an accelerometer to capture handwritten gestures and digitize them. Used Arduino for processing and Bluetooth to transmit data to Android devices. A companion app converts handwriting into editable digital documents. This project won 1st Prize at ICCCSP2019 and received funding from the Siva Nadar Foundation’s Bright Idea program for its innovation in handwriting technology.",
-    imageUrl: "/Assets/OCR.jpg", // Replace with an appropriate image URL
+    imageUrl: "/sreenivas_portfolio/Assets/OCR.jpg", // Replace with an appropriate image URL
    
   },
   

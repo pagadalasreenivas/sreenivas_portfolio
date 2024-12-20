@@ -195,7 +195,7 @@ export default function Contact() {
           <h4 style={{ color: "white", marginBottom: "20px" }}>Get in touch!</h4>
           <p>Email: <a href="mailto:sreenivaspagadala1999@gmail.com" style={{ color: "cyan" }}>sreenivaspagadala1999@gmail.com</a></p>
           <img
-            src="/Assets/contact.jpg"
+            src="/sreenivas_portfolio/Assets/contact.jpg"
             alt="Contact"
             style={{
               width: "100%",

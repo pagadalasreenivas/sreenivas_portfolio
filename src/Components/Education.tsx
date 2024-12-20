@@ -65,7 +65,7 @@ export default function Education() {
                   <Row className="align-items-center g-3">
                     <Col xs={12} sm={5} className="text-center">
                       <img
-                        src="/Assets/ed.jpg"
+                        src="/sreenivas_portfolio/Assets/ed.jpg"
                         alt="Master's Degree"
                         className="img-fluid rounded"
                         style={{ objectFit: "cover", maxHeight: "180px" }}
@@ -108,7 +108,7 @@ export default function Education() {
                   <Row className="align-items-center g-3">
                     <Col xs={12} sm={5} className="text-center">
                       <img
-                        src="/Assets/ssn.jpg"
+                        src="/sreenivas_portfolio/Assets/ssn.jpg"
                         alt="Bachelor's Degree"
                         className="img-fluid rounded"
                         style={{ objectFit: "cover", maxHeight: "180px" }}

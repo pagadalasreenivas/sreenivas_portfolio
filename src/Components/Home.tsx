@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <section>
       <Container fluid content='home-section' id='home'>
-        <div className="row align-items-center" style={{ minHeight: '120vh' }}>
+        <div className="row align-items-center" style={{ minHeight: '140vh' }}>
           {/* Left Section */}
           <div className="col-lg-6 col-md-12 text-start mb-4">
             <h1 className="display-4 text-white fw-bold">

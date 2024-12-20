@@ -4,7 +4,7 @@ import { FaDownload } from "react-icons/fa6";
 
 export default function Resume() {
   const [width, setWidth] = useState(1200);
-  const pdfUrl = '/Assets/Sreenivas_resume_final.pdf';
+  const pdfUrl = '/sreenivas_portfolio/Assets/Sreenivas_resume_final.pdf';
 
   useEffect(() => {
     setWidth(window.innerWidth);
