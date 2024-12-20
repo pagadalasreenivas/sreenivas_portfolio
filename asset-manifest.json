@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sreenivas_portfolio/static/css/main.68832cdf.css",
-    "main.js": "/sreenivas_portfolio/static/js/main.254fd814.js",
+    "main.js": "/sreenivas_portfolio/static/js/main.95e2809f.js",
     "static/js/453.4d831fee.chunk.js": "/sreenivas_portfolio/static/js/453.4d831fee.chunk.js",
     "index.html": "/sreenivas_portfolio/index.html",
     "main.68832cdf.css.map": "/sreenivas_portfolio/static/css/main.68832cdf.css.map",
-    "main.254fd814.js.map": "/sreenivas_portfolio/static/js/main.254fd814.js.map",
+    "main.95e2809f.js.map": "/sreenivas_portfolio/static/js/main.95e2809f.js.map",
     "453.4d831fee.chunk.js.map": "/sreenivas_portfolio/static/js/453.4d831fee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68832cdf.css",
-    "static/js/main.254fd814.js"
+    "static/js/main.95e2809f.js"
   ]
 }
