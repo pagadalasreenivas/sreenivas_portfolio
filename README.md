@@ -53,11 +53,11 @@ http://localhost:3000
 ## Deployment
 This portfolio is deployed using Vercel. Here’s how you can deploy it on your own:
 
-Push the repository to GitHub (if not already done).
-Go to Vercel, log in, and create a new project.
-Import the repository from GitHub into Vercel.
-Vercel will automatically detect that it's a React project and deploy it.
-Once deployed, you’ll be given a unique URL where your portfolio will be live.
+- Push the repository to GitHub (if not already done).
+- Go to Vercel, log in, and create a new project.
+- Import the repository from GitHub into Vercel.
+- Vercel will automatically detect that it's a React project and deploy it.
+- Once deployed, you’ll be given a unique URL where your portfolio will be live.
 
 ## Folder Structure
 
