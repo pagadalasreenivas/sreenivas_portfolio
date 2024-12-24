@@ -26,7 +26,6 @@ const projects = [
 
 
 
-
 export default function Projects() {
   return (
     <div>
@@ -53,7 +52,8 @@ export default function Projects() {
           bg="black"
           className="text-center"
           style={{
-            width: "40%",
+            width: "90%", // Adjust for smaller screens
+            maxWidth: "40rem",
             boxShadow: "0px 4px 15px rgba(255, 255, 255, 0.5)",
             overflow: "hidden",
             border: "1px solid white",
@@ -65,52 +65,52 @@ export default function Projects() {
       </div>
 
       {/* Projects section */}
-      <div
-        className="d-flex flex-wrap justify-content-center p-5"
-        style={{ background: "#000" }}
-      >
-        {projects.map((project) => (
-          <Card
-            key={project.id}
-            bg="black"
-            className="text-center m-3"
-            style={{
-              width: "30rem",
-              height: "45rem",
-              boxShadow: "0px 4px 15px rgba(255, 255, 255, 0.5)",
-              overflow: "hidden",
-              border: "1px solid white",
-            }}
-          >
-            {/* Image in the header */}
-            <Card.Img
-              variant="top"
-              src={project.imageUrl}
-              style={{
-                width:480,
-                height: 300,
-                objectFit: "cover",
-                borderBottom: "1px solid white",
-              }}
-            />
-            <Card.Body>
-              <Card.Header
+      <div className="container py-5" style={{ background: "#000" }}>
+        <div className="row">
+          {projects.map((project) => (
+            <div className="col-12 col-md-6 col-lg-4 mb-4" key={project.id}>
+              <Card
+                bg="black"
+                className="text-center h-100"
                 style={{
-                  color: "white",
-                  fontSize: 24,
-                  fontWeight: "bold",
-                  borderBottom: "1px solid white",
+                  boxShadow: "0px 4px 15px rgba(255, 255, 255, 0.5)",
+                  overflow: "hidden",
+                  border: "1px solid white",
                 }}
               >
-                {project.title}
-              </Card.Header>
-              <Card.Text style={{ color: "white" }}>
-                {project.description}
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        ))}
+                {/* Image in the header */}
+                <Card.Img
+                  variant="top"
+                  src={project.imageUrl}
+                  style={{
+                    width: "100%",
+                    height: "auto", // Adjust height based on content
+                    objectFit: "cover",
+                    borderBottom: "1px solid white",
+                  }}
+                />
+                <Card.Body>
+                  <Card.Header
+                    style={{
+                      color: "white",
+                      fontSize: "1.25rem",
+                      fontWeight: "bold",
+                      borderBottom: "1px solid white",
+                      marginBottom: "1rem",
+                    }}
+                  >
+                    {project.title}
+                  </Card.Header>
+                  <Card.Text style={{ color: "white" }}>
+                    {project.description}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
 }
+
