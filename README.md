@@ -61,25 +61,25 @@ This portfolio is deployed using Vercel. Here’s how you can deploy it on your 
 
 ## Folder Structure
 
-/sreenivas_portfolio
-├── /public
-│   ├── index.html             # Main HTML template
-│   ├── favicon.ico            # Favicon
-│   ├── manifest.json          # Web app manifest
-│   └── assets/                # Images and other assets
-│
-├── /src
-│   ├── /components            # Reusable React components (Header, Footer, Projects, etc.)
-│   ├── /pages                 # React components for different pages
-│   ├── App.js                 # Main App component
-│   ├── index.js               # Entry point for React
-│   ├── App.css                # Global styles
-│   └── index.css              # Global styles
-│
-├── /node_modules              # Node dependencies
-├── package.json               # Project metadata and dependencies
-├── README.md                  # This file
-└── .gitignore                 # Files to be ignored by git
+- /sreenivas_portfolio
+- ├── /public
+- │   ├── index.html             # Main HTML template
+- │   ├── favicon.ico            # Favicon
+- │   ├── manifest.json          # Web app manifest
+- │   └── assets/                # Images and other assets
+- │
+- ├── /src
+- │   ├── /components            # Reusable React components (Header, Footer, Projects, etc.)
+- │   ├── /pages                 # React components for different pages
+- │   ├── App.js                 # Main App component
+- │   ├── index.js               # Entry point for React
+- │   ├── App.css                # Global styles
+- │   └── index.css              # Global styles
+- │
+- ├── /node_modules              # Node dependencies
+- ├── package.json               # Project metadata and dependencies
+- ├── README.md                  # This file
+- └── .gitignore                 # Files to be ignored by git
 
 ## Contributing
 Feel free to fork this project and make improvements. You can open an issue if you have any suggestions or find a bug.
