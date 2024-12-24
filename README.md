@@ -86,11 +86,13 @@ Feel free to fork this project and make improvements. You can open an issue if y
 
 To contribute, follow these steps:
 
-Fork the repository.
-Create a new branch for your changes.
-Make the necessary changes.
-Open a pull request with a clear description of the changes.
-
+- Fork the repository.
+- Create a new branch for your changes.
+- Make the necessary changes.
+- Open a pull request with a clear description of the changes.
+  
+## License
+- This project is open source and available under the MIT License.
 
 
 
