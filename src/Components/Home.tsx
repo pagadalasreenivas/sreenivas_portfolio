@@ -1,9 +1,8 @@
 import React from 'react';
-import { Container, Button, Card } from 'react-bootstrap';
+import { Container, Button, Card, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import Type from './Type';
 import About from './About';
 import Education from './Education';
-import Resume from './Resume';
 import Skills from './Skills';
 import Experience from './Experience';
 import Projects from './Projects';
@@ -11,8 +10,9 @@ import { RiContactsLine } from "react-icons/ri";
 import { MdDownloadForOffline } from "react-icons/md";
 import "../App.css";
 import Contact from './Contact';
+import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 
-const pdfUrl = '/Assets/Sreenivas_resume_final.pdf';
+const pdfUrl = '/sreenivas_portfolio/Assets/Sreenivas_resume_final.pdf';
 
 const Home = () => {
   const coder = {
@@ -48,7 +48,7 @@ const Home = () => {
   <Button
     variant="light"
     onClick={scrollToContact}
-    className='hover-effect'
+    className="hover-effect"
     style={{
       fontWeight: "bold",
       padding: "10px 20px",
@@ -62,7 +62,7 @@ const Home = () => {
 
   <Button
     variant="light"
-    className='hover-transform'
+    className="hover-transform"
     href={pdfUrl}
     style={{
       fontWeight: "bold",
@@ -73,6 +73,50 @@ const Home = () => {
   >
     Get Resume <MdDownloadForOffline size={20} />
   </Button>
+</div>
+
+<div className="d-flex justify-content-center mt-5"> {/* Added mt-5 for spacing */}
+  <OverlayTrigger
+    placement="top"
+    overlay={<Tooltip id="github-tooltip">GitHub</Tooltip>}
+  >
+    <a href="https://github.com/pagadalasreenivas/" target="_blank" rel="noopener noreferrer" className="mx-2">
+      <FaGithub size={40} style={{ color: "white" }} />
+    </a>
+  </OverlayTrigger>
+
+  <OverlayTrigger
+    placement="top"
+    overlay={<Tooltip id="linkedin-tooltip">LinkedIn</Tooltip>}
+  >
+    <a href="https://www.linkedin.com/in/sreenivaspagadala/" target="_blank" rel="noopener noreferrer" className="mx-2">
+      <FaLinkedin size={40} style={{ color: "white" }} />
+    </a>
+  </OverlayTrigger>
+
+  <OverlayTrigger
+    placement="top"
+    overlay={<Tooltip id="leetcode-tooltip">LeetCode</Tooltip>}
+  >
+    <a
+      href="https://leetcode.com/u/spagadal/"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: "cyan", fontSize: "20px" }}
+      className="mx-2"
+    >
+      <img
+        src={`${process.env.PUBLIC_URL}/Assets/lc.png`}
+        alt="LeetCode"
+        style={{
+          verticalAlign: "middle",
+          width: "40px",
+          height: "40px",
+          marginRight: "8px",
+        }}
+      />
+    </a>
+  </OverlayTrigger>
 </div>
 
           </div>

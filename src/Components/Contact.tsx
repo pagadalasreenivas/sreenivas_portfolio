@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Card, Form, Button } from "react-bootstrap";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Card, Form, Button, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { FaGithub, FaLinkedin} from "react-icons/fa";
 import emailjs from "emailjs-com";
 
 export default function Contact() {
@@ -205,15 +205,47 @@ export default function Contact() {
             }}
           />
           <div style={{ display: "flex", gap: "15px", marginTop: "20px" }}>
-            <a href="https://github.com/your_username" target="_blank" rel="noopener noreferrer">
-              <FaGithub size={30} style={{ color: "white" }} />
-            </a>
-            <a href="https://linkedin.com/in/your_username" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin size={30} style={{ color: "white" }} />
-            </a>
-            <a href="https://twitter.com/your_username" target="_blank" rel="noopener noreferrer">
-              <FaTwitter size={30} style={{ color: "white" }} />
-            </a>
+          <OverlayTrigger
+    placement="top"
+    overlay={<Tooltip id="github-tooltip">GitHub</Tooltip>}
+  >
+    <a href="https://github.com/pagadalasreenivas/" target="_blank" rel="noopener noreferrer" className="mx-2">
+      <FaGithub size={40} style={{ color: "white" }} />
+    </a>
+  </OverlayTrigger>
+
+  <OverlayTrigger
+    placement="top"
+    overlay={<Tooltip id="linkedin-tooltip">LinkedIn</Tooltip>}
+  >
+    <a href="https://www.linkedin.com/in/sreenivaspagadala/" target="_blank" rel="noopener noreferrer" className="mx-2">
+      <FaLinkedin size={40} style={{ color: "white" }} />
+    </a>
+  </OverlayTrigger>
+
+  <OverlayTrigger
+    placement="top"
+    overlay={<Tooltip id="leetcode-tooltip">LeetCode</Tooltip>}
+  >
+    <a
+      href="https://leetcode.com/u/spagadal/"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: "cyan", fontSize: "20px" }}
+      className="mx-2"
+    >
+      <img
+        src={`${process.env.PUBLIC_URL}/Assets/lc.png`}
+        alt="LeetCode"
+        style={{
+          verticalAlign: "middle",
+          width: "40px",
+          height: "40px",
+          marginRight: "8px",
+        }}
+      />
+    </a>
+  </OverlayTrigger>
           </div>
         </div>
       </div>
