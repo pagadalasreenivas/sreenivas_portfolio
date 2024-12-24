@@ -39,15 +39,15 @@ Follow these steps to set up this portfolio locally:
 2. **Change Directory to sreenivas_portfolio**:   
 cd sreenivas_portfolio
 
-3. **Npm Install**
+3. **Npm Install**:
 npm install
 
 
 ## How to Run Locally
-1. **RUN LOCALLY**
+1. **RUN LOCALLY**:
 npm start
 
-2. **Open in Local**
+2. **Open in Local**:
 http://localhost:3000
 
 ## Deployment
