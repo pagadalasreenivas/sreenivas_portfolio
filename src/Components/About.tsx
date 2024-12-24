@@ -98,7 +98,7 @@ export default function About() {
           <Col md={6} sm={12} className="d-flex justify-content-center">
             <div style={{ position: "relative", width: "100%", maxWidth: "500px" }}>
               <img
-                src="/sreenivas_portfolio/Assets/aboutme.jpg"
+                src={`${process.env.PUBLIC_URL}/Assets/aboutme.jpg`}
                 alt="About Me"
                 style={{
                   width: "100%",

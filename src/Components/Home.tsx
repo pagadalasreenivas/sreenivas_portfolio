@@ -12,7 +12,7 @@ import "../App.css";
 import Contact from './Contact';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 
-const pdfUrl = '/sreenivas_portfolio/Assets/Sreenivas_resume_final.pdf';
+const pdfUrl = process.env.PUBLIC_URL+'/Assets/Sreenivas_resume_final.pdf';
 
 const Home = () => {
   const coder = {
