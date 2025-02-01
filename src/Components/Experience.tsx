@@ -6,16 +6,36 @@ const experiences = [
     id: 1,
     title: "SNS Technologies LLC.",
     role: "Software Engineer Intern",
-    date: "July 2022 - August 2024",
+    date: "May 2024 - December 2024",
     bullets: [
-      "Developed REST APIs and microservices using Spring Boot, optimizing workflows with design patterns like SAGA and CORS.",
-      "Deployed scalable applications on Azure and AWS platforms, working with EC2, S3, and App Services.",
-      "Built responsive user interfaces with React and enhanced database performance using Hibernate ORM.",
-      "Gained hands-on experience in backend development, cloud integration, and microservices architecture.",
-      "Improved team collaboration in a remote setup, ensuring timely delivery of projects.",
-      "Enhanced system maintainability and flexibility by designing robust solutions for enterprise applications."
+      "Designed and implemented an XML report generation system using Spring MVC & Spring Data JPA, processing 100,000+ records daily.",
+      "Optimized complex queries with DTO projections, pagination, and indexing, reducing query execution time by 50%.",
+      "Developed RESTful APIs for dynamic report generation, integrating automated scheduling with @Scheduled.",
+      "Implemented batch processing using Spring Batch & multi-threading, improving performance for large datasets.",
+      "Built CI/CD pipelines with Azure DevOps, streamlining deployment and automation.",
+      "Stored reports securely in AWS S3, ensuring scalability and accessibility for enterprise use.",
+      "Integrated Log4j for structured logging, enhancing debugging and real-time monitoring of report generation processes.",
+      "Enhanced system performance with Redis/EhCache caching, reducing redundant database queries and improving speed.",
+      "Delivered XML report files securely via SFTP for remote server integration and automated processing.",
+      "Utilized IBM MQ queues to consume and update XML files, ensuring data consistency across systems.",
+      "Developed an interactive React-based frontend dashboard for real-time report visualization and monitoring.",
+      "Built reusable React components with TypeScript and React-Bootstrap, ensuring a modular and scalable UI.",
+      "Integrated API consumption in React, enabling dynamic filtering and downloading of reports.",
+      "Optimized frontend performance with lazy loading and memoization, improving responsiveness and user experience."
     ],
-    techStack: ["Java", "Python", "React", "Spring Boot", "Azure", "AWS", "Hibernate"]
+    techStack: [
+      "Java",
+      "Spring Boot",
+      "Spring MVC",
+      "React",
+      "TypeScript",
+      "Azure DevOps",
+      "AWS S3",
+      "Redis",
+      "IBM MQ",
+      "Hibernate",
+      "Log4j"
+    ]
   },
   {
     id: 2,
@@ -23,16 +43,26 @@ const experiences = [
     role: "Software Engineer",
     date: "December 2021 - May 2023",
     bullets: [
-      "Developed RESTful APIs and optimized SQL queries, reducing API response time by 60%.",
-      "Implemented over 15 UI/UX modifications and integrated front-end elements with back-end systems.",
+      "Developed Java Spring Boot and Groovy microservices, supporting 1M+ daily transactions with 99% uptime.",
+      "Built scalable REST APIs and backend workflows to process 500K+ monthly prior authorization requests.",
       "Designed a microservice that improved system efficiency by 20% and streamlined team integration.",
-      "Enhanced the authorization workflow, increasing auto-approval rates by up to 50% for complex EPA cases.",
+      "Implemented over 15 UI/UX modifications and integrated front-end elements with back-end systems.",
       "Redesigned the notification system, consolidating 10,000 emails into aggregated messages to improve performance.",
-      "Automated CI/CD pipelines for seamless integration and deployment, enhancing operational efficiency."
+      "Automated CI/CD pipelines for seamless integration and deployment, enhancing operational efficiency.",
+      "Developed a React-based internal dashboard, integrating API-driven data visualization for analytics and reports.",
+      "Built responsive frontend components using AngularJS and Angular, collaborating with UI/UX teams for Figma designs.",
+      "Followed Test-Driven Development (TDD) practices, writing unit tests using Spock, Jasmine, and Karma frameworks.",
+      "Authored and implemented 80+ Flyway migration scripts to support seamless updates and optimizations in MySQL databases.",
+      "Diagnosed and resolved 10+ critical production issues through debugging sessions using tools like Splunk and Dynatrace.",
+      "Optimized SQL queries and database indexing, reducing API response time by 60% and improving performance.",
+      "Enhanced authorization workflows, increasing auto-approval rates by up to 50% for complex prior authorization cases.",
+      "Ensured cross-functional team collaboration and project tracking using Azure DevOps for efficient task management."
     ],
     techStack: [
       "Java",
       "Groovy",
+      "React",
+      "Spring Boot",
       "REST API",
       "AngularJS",
       "Angular 8",
@@ -45,6 +75,7 @@ const experiences = [
     ]
   }
 ];
+
 
 
 export default function Experience() {
